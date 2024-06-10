@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="header">
+    <h1 id="title" class="title text-center">Pet Survey Form</h1>
+
+    <p id="description" class="description text-center">
+      What do you think about animals?
+    </p>
+  </div>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Your name..." required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Your email..." required />
+    </div>
+
+    <div class="form-group">
+      <label id="pet-name-label" for="pet-name">Pet Name</label>
+      <input type="text" name="pet-name" id="pet-name" class="form-control" placeholder="Pet name..." required />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">
+        Pet Age<span class="clue">(optional)</span>
+      </label>
+      <input type="number" name="pet-age" id="number" min="10" max="99" class="form-control" placeholder="Pet age..." />
+    </div>
+
+    <div class="form-group">
+      <label id="pet-gender-label" for="gender">Pet Gender</label>
+      <select id="dropdown" name="gender" class="form-control" required>
+        <option disabled selected value>Select pet gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="notSure">Not Sure</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Since when have you had your pet?</label>
+
+      <label>
+        <input name="user-recommend" value="childhood" type="radio" class="input-radio" checked />
+        Childhood
+      </label>
+
+      <label>
+        <input name="user-recommend" value="some-time-ago" type="radio" class="input-radio" />
+        Some time ago
+      </label>
+
+      <label>
+        <input name="user-recommend" value="recently" type="radio" class="input-radio" />
+        Recently
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Favorite type of animals
+      </label>
+
+      <label>
+        <input name="prefer" value="cats" type="checkbox" class="input-checkbox" />
+        Cats
+      </label>
+      <label>
+        <input name="prefer" value="dogs" type="checkbox" class="input-checkbox" />
+        Dogs
+      </label>
+      <label>
+        <input name="prefer" value="birds" type="checkbox" class="input-checkbox" />
+        Birds
+      </label>
+      <label>
+        <input name="prefer" value="other" type="checkbox" class="input-checkbox" />
+        Other
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label id="opinion-label" for="opinion">Opinion about website</label>
+      <textarea id="opinions" class="input-textarea" name="opinion" placeholder="Enter your opinion here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
